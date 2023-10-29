@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.png" alt="Logo HASY">
+                <div class="busqueda">
+                    <input type="text" placeholder="Buscar nombre" id="search-input">
+                    <button title="buscar" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </section>
+            <section>
+                <nav>
+                    <div class="desplegable">
+                        <button type="button">Ver todo</button>
+                    </div>
+                    <div class="desplegable">
+                        <button type="button">Lisos</button>
+                        <div class="filtro">
+                            <button type="button">Satén</button>
+                            <button type="button">Lino</button>
+                            <button type="button">Bio-Muselina</button>
+                        </div>
+                    </div>
+                    <div class="desplegable">
+                        <button type="button">Estampados</button>
+                        <div class="filtro"></div>
+                    </div>
+                    <div class="desplegable">
+                        <button type="button">Utensilios</button>
+                        <div class="utensilios filtro oculto"></div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <div class="escaparate">
+                <div onclick="window.location.href='./material_seleccion.html';" class="card">
+                    <figure>
+                        <img class="material saten" src="../imagenes/materiales/imagen1.jpg" alt="prenda 1">
+                        <figcaption>
+                            Satén gris marengo
+                            <br>
+                            <span>12,95 €</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="material" src="../imagenes/materiales/imagen2.jpg" alt="Imagen 2">
+                        <figcaption>
+                            Lino Humus Gris ceniza
+                            <br>
+                            <span>12,95 €</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="material" src="../imagenes/materiales/imagen3.jpg" alt="Imagen 3">
+                        <figcaption>
+                            Lino Marrón Jaspeado
+                            <br>
+                            <span>12,95 €</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="material" src="../imagenes/materiales/imagen4.jpg" alt="Imagen 4">
+                        <figcaption>
+                            Satén Melocotón
+                            <br>
+                            <span>12,95 €</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="material" src="../imagenes/materiales/imagen5.jpg" alt="Imagen 5">
+                        <figcaption>
+                            Bio-Muselina de Menta
+                            <br>
+                            <span>12,95 €</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img class="material" src="../imagenes/materiales/imagen6.jpg" alt="Imagen 6">
+                        <figcaption>
+                            Satén Plata
+                            <br>
+                            <span>12,95 €</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <aside id="menu">
+                <div>
+                    <nav>
+                        <a href="../materiales/materiales.html" id="elegida">Materiales</a>
+                        <a href="../patrones/patrones.html">Patrones</a>
+                        <a href="../tendencias.html">Tendencias</a>
+                        <a href="../usuario/usuario.html">Usuario</a>
+                        <a href="../cesta/cesta.html">Carrito</a>
+                    </nav>
+                </div>
+            </aside>
+        </main>
+    </body>
+</html>

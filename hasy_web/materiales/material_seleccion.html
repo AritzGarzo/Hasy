@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.png" alt="Logo HASY">
+                <div class="busqueda">
+                    <input type="text" placeholder="Buscar nombre" id="search-input">
+                    <button title="buscar" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <main>
+            <div id="seleccion">
+                <section>
+                    <img id="patron" src="../imagenes/materiales/imagen1.jpg" alt="Imagen patron 1">
+                </section>
+                <section id="material">
+                    <div>
+                        <h1>Satén gris marengo</h1>
+                        <img src="../imagenes/materiales/Materiales_elegir.JPG" alt="Eleccion materiales">
+                    </div>
+                    <div id="precio">
+                        <h3>12,95 €/m</h3>
+                        <div class="cantidad">
+                            <button class="decrement">-</button>
+                            <span id="valor">0.0</span>
+                            <button class="increment">+</button>
+                        </div>
+                        <p>longitud (m)</p>
+                    </div>
+                    <div>
+                        <button type="button" class="continuar">Añadir al carrito</button>
+                    </div>
+                </section>
+                <section id="video">
+                    <div>
+                        <h1>Resultados</h1>
+                        <video src="../videos/video_prueba.mp4" autoplay></video>
+                    </div>
+                </section>
+            </div>
+            <aside id="menu">
+                <section>
+                    <nav>
+                        <a href="../materiales/materiales.html" id="elegida">Materiales</a>
+                        <a href="../patrones/patrones.html">Patrones</a>
+                        <a href="../tendencias.html">Tendencias</a>
+                        <a href="../usuario/usuario.html">Usuario</a>
+                        <a href="../cesta/cesta.html">Carrito</a>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+    </body>
+</html>

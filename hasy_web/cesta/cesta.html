@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.png" alt="Logo HASY">
+            </section>
+        </header>
+        <main>
+            <div>
+                <section id="lista">
+                    <div id="elemento1" class="elemento">
+                        <img src="../imagenes/materiales/algodon_lino.jpg" alt="algodon lino">
+                        <p>material 1</p>
+                        <div class="precio">
+                            <div class="cantidad">
+                                <button class="decrement">-</button>
+                                <span class="valor">0.0</span>
+                                <button class="increment">+</button>
+                            </div>
+                            <p>14,99m/€</p>
+                        </div>
+                        <button title="eliminar" type="button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="elemento2" class="elemento">
+                        <img src="../imagenes/materiales/algodon_lino.jpg" alt="algodon lino">
+                        <p>material 2</p>
+                        <div class="precio">
+                            <div class="cantidad">
+                                <button class="decrement">-</button>
+                                <span class="valor">0.0</span>
+                                <button class="increment">+</button>
+                            </div>
+                            <p>14,99m/€</p>
+                        </div>
+                        <button title="eliminar" type="button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="elemento3" class="elemento">
+                        <img src="../imagenes/materiales/algodon_lino.jpg" alt="algodon lino">
+                        <p>material 3</p>
+                        <div class="precio">
+                            <div class="cantidad">
+                                <button class="decrement">-</button>
+                                <span class="valor">0.0</span>
+                                <button class="increment">+</button>
+                            </div>
+                            <p>14,99m/€</p>
+                        </div>
+                        <button title="eliminar" type="button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <aside id="menu">
+            <section id="continuar">
+                <button class="continuar" onclick="window.location.href='./compra.html';">Continuar</button>
+                <div class="total">
+                    <span>Total:</span>
+                    <p>
+                        <span id="valor">55.88</span>
+                        €
+                    </p>
+                </div>
+            </section>
+            <section>
+                <nav>
+                    <a href="../materiales/materiales.html">Materiales</a>
+                    <a href="../patrones/patrones.html">Patrones</a>
+                    <a href="../tendencias.html">Tendencias</a>
+                    <a href="../usuario/usuario.html">Usuario</a>
+                    <a href="../cesta/cesta.html" id="elegida">Carrito</a>
+                </nav>
+            </section>
+        </aside>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.png" alt="Logo HASY">
+                <div class="busqueda">
+                    <input type="text" placeholder="Buscar nombre" id="search-input">
+                    <button title="buscar" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </section>
+            <section>
+                <nav>
+                    <div class="desplegable">
+                        <button type="button">Ver todo</button>
+                    </div>
+                    <div class="desplegable">
+                        <button id="mujer" type="button">Mujer</button>
+                        <div class="filtro">
+                            <button id="minifalda" class="subfiltro" type="button">Minifalda</button>
+                            <button id="falda" class="subfiltro" type="button">Falda</button>
+                            <button id="vestido" class="subfiltro" type="button">Vestido</button>
+                            <button id="corse" class="subfiltro" type="button">Corsé</button>
+                            <button id="camisa" class="subfiltro" type="button">Camisa</button>
+                            <button id="pantalones" class="subfiltro" type="button">Pantalones</button>
+                        </div>
+                    </div>
+                    <div class="desplegable">
+                        <button id="hombre" type="button">Hombre</button>
+                    </div>
+                    <div class="desplegable">
+                        <button id="infantil" type="button">Infantil</button>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <div class="escaparate">
+                <div onclick="window.location.href='./patron_seleccion.html';" class="card">
+                    <img class="patron" src="../imagenes/patrones/camisa_1.jpg" alt="Camisa 1">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/vestido_1.jpg" alt="Vestido 1">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/vestido_2.jpg" alt="Vestido 2">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/corse_1.jpg" alt="Corse 1">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/minifalda_1.jpg" alt="Minifalda 1">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/vestido_2.jpg" alt="Vestido 2">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/vestido_3.jpg" alt="Vestido 3">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/minifalda_2.jpg" alt="Minifalda 2">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/pantalones_1.jpg" alt="Pantalones 1">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/pantalones_2.jpg" alt="Pantalones 2">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/vestido_4.jpg" alt="Vestido 4">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/vestido_5.jpg" alt="Vestido 5">
+                </div>
+                <div class="card">
+                    <img class="patron" src="../imagenes/patrones/pantalones_3.jpg" alt="Pantalones 3">
+                </div>
+            </div>
+            <aside id="menu">
+                <section>
+                    <nav>
+                        <a href="../materiales/materiales.html">Materiales</a>
+                        <a href="../patrones/patrones.html" id="elegida">Patrones</a>
+                        <a href="../tendencias.html">Tendencias</a>
+                        <a href="../usuario/usuario.html">Usuario</a>
+                        <a href="../cesta/cesta.html">Carrito</a>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+    </body>
+</html>

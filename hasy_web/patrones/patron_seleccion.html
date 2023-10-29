@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.png" alt="Logo HASY">
+                <div class="busqueda">
+                    <input type="text" placeholder="Buscar nombre" id="search-input">
+                    <button title="buscar" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <main>
+            <div id="seleccion">
+                <section>
+                    <img id="patron" src="../imagenes/patrones/imagen1.jpg" alt="Imagen patron 1">
+                </section>
+                <section id="medidas">
+                    <div id="descripcion">
+                        <h1>Pantalón Jogger waist</h1>
+                        <p>Pantalón pitillo de tiro medio con cintura elástica en espalda. Bolsillos frontales y falsos bolsillos de vivo en espalda. Bajo con aberturas laterales. Cierre frontal con cremallera, botón interior y gancho metálico.</p>
+                    </div>
+                    <div>
+                        <h3>Tallas:</h3>
+                        <div class="tallas">
+                            <div class="talla">XS</div>
+                            <div class="talla">S</div>
+                            <div class="talla">L</div>
+                            <div class="talla">XL</div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="continuar" onclick="window.location.href='./descarga.html';">Ver patrones</button>
+                    </div>
+                </section>
+                <section id="video">
+                    <div>
+                        <h1>Confecciona tu prenda</h1>
+                        <video src="../videos/video_prueba.mp4" autoplay></video>
+                    </div>
+                </section>
+            </div>
+            <aside id="menu">
+                <section>
+                    <nav>
+                        <a href="../materiales/materiales.html">Materiales</a>
+                        <a href="../patrones/patrones.html" id="elegida">Patrones</a>
+                        <a href="./tendencias.html">Tendencias</a>
+                        <a href="../usuario/usuario.html">Usuario</a>
+                        <a href="../cesta/cesta.html">Carrito</a>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+    </body>
+</html>

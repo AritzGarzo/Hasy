@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.jpg" alt="Logo HASY">
+            </section>
+        </header>
+        <main>
+            <div class="facturacion">
+                <section class="informacion titular">
+                    <span>DNI titular</span>
+                    <input type="text" id="titular" placeholder="Nombre y apellidos">
+                </section>
+                <section class="informacion tarjeta">
+                    <span>Numero de la tarjeta</span>
+                    <input type="text" id="tarjeta" placeholder="XXXX XXXX XXXX XXXX">
+                </section>
+                <section class="informacion caducidad">
+                    <span>Fecha de caducidad</span>
+                    <input type="date" id="caducidad" name="caducidad">
+                </section>
+                <section class="informacion cvv">
+                    <span>Código CVV</span>
+                    <input type="text" id="cvv" placeholder="XXX">
+                </section>
+            </div>
+            <aside id="menu">
+                <section>
+                    <button class="comprar" onclick="window.location.href='./cesta.html';">Comprar</button>
+                </section>
+                <section>
+                    <nav>
+                        <a href="../materiales/materiales.html">Materiales</a>
+                        <a href="../patrones/patrones.html">Patrones</a>
+                        <a href="../tendencias.html">Tendencias</a>
+                        <a href="../usuario/usuario.html">Usuario</a>
+                        <a href="../cesta/cesta.html" id="elegida">Carrito</a>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HASY</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="cabecera">
+                <img id="logo-mini" src="../imagenes/logo-mini.png" alt="Logo HASY">
+            </section>
+        </header>
+        <main>
+            <div class="perfil">
+                <h1>Editar Perfil</h1>
+                <form action="./usuario.html" method="post">
+                    <section class="edicion">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombreEditar" placeholder="Juan Pérez">
+                    </section>
+                    <section class="edicion">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuarioEditar" placeholder="juan123">
+                    </section>
+                    <section class="edicion">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correoEditar" placeholder="juan.perez@example.com">
+                    </section>
+                    <section class="edicion">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasenaEditar" placeholder="********">
+                    </section>
+                    <section class="edicion">
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="tel" id="telefonoEditar" placeholder="123-456-7890">
+                    </section>
+                    <button class="continuar" type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+            <aside id="menu">
+                <section>
+                    <button class="comprar" onclick="window.location.href='./usuario.html';">Volver</button>
+                </section>
+                <section>
+                    <nav>
+                        <a href="../materiales/materiales.html">Materiales</a>
+                        <a href="../patrones/patrones.html">Patrones</a>
+                        <a href="../tendencias.html">Tendencias</a>
+                        <a href="../usuario/usuario.html" id="elegida">Usuario</a>
+                        <a href="../cesta/cesta.html">Carrito</a>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+        <!-- Popup de Éxito -->
+        <!-- <div id="modalSuccess" class="modal-bg modal-success">
+            <div class="modal-content">
+                <h2>Éxito</h2>
+                <p>Se han modificado los campos correctamente.</p>
+                <button id="cerrarSuccess">Cerrar</button>
+            </div>
+        </div> -->
+        <!-- Popup de Error -->
+        <!-- <div id="modalError" class="modal-bg modal-error">
+            <div class="modal-content">
+                <h2>Error</h2>
+                <p>Ha ocurrido un error. Por favor, inténtalo de nuevo.</p>
+                <button id="cerrarError">Cerrar</button>
+            </div>
+        </div> -->
+    </body>
+</html>
