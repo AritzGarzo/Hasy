@@ -1,22 +1,43 @@
 window.onload = function() {
     carrusel();
     let logo = document.getElementById("logo-mini").addEventListener("click", home);
-    let subfiltros = document.getElementsByClassName("subfiltro").addEventListener("click", filtrar);
+    // Obtener los botones de filtro y subfiltro
+    const filtroButtons = document.querySelectorAll('[data-filter]');
+    const subfiltroButtons = document.querySelectorAll('.subfiltro');
+    const productos = document.querySelectorAll('.card');
+
+    // Agregar eventos a los botones de filtro y subfiltro
+    filtroButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filtro = button.getAttribute('data-filter');
+            filtrarProductos(filtro);
+        });
+    });
+
+    subfiltroButtons.forEach(subfiltro => {
+        subfiltro.addEventListener('click', () => {
+            const filtro = subfiltro.getAttribute('data-filter');
+            filtrarProductos(filtro);
+        });
+    });
+
+    // Función para filtrar productos
+    function filtrarProductos(filtro) {
+        productos.forEach(producto => {
+            const categoria = producto.getAttribute('data-categoria');
+            if (filtro === 'todo' || filtro === categoria) {
+                producto.classList.remove("hidden");
+            } else {
+                // producto.style.display = 'none';
+                producto.classList.add("hidden");
+            }
+        });
+    }
 
 }
-
-var usuario = "";
-var nombre = "";
-var correo = "";
-var telefono = "";
-var contrasena = "";
 
 function home() {
-    window.location.href = "index.html";
-}
-
-function filtrar() {
-    
+    window.location.href = "../index.html";
 }
 
 function carrusel() {

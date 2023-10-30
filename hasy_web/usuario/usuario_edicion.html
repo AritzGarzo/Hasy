@@ -19,57 +19,42 @@
                 <form action="./usuario.html" method="post">
                     <section class="edicion">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombreEditar" placeholder="Juan Pérez">
+                        <input type="text" id="nombreEditar">
                     </section>
                     <section class="edicion">
                         <label for="usuario">Usuario:</label>
-                        <input type="text" id="usuarioEditar" placeholder="juan123">
+                        <input type="text" id="usuarioEditar">
                     </section>
                     <section class="edicion">
                         <label for="correo">Correo:</label>
-                        <input type="email" id="correoEditar" placeholder="juan.perez@example.com">
+                        <input type="email" id="correoEditar">
                     </section>
                     <section class="edicion">
                         <label for="contrasena">Contraseña:</label>
-                        <input type="password" id="contrasenaEditar" placeholder="********">
+                        <input type="password" id="contrasenaEditar">
                     </section>
                     <section class="edicion">
                         <label for="telefono">Número de Teléfono:</label>
-                        <input type="tel" id="telefonoEditar" placeholder="123-456-7890">
+                        <input type="tel" id="telefonoEditar">
                     </section>
-                    <button class="continuar" type="submit">Guardar Cambios</button>
+                    <div id="continuar">
+                        <button class="continuar" type="submit">Guardar Cambios</button>
+                        <button class="continuar" onclick="window.location.href='./usuario.html';">Volver</button>
+                    </div>
                 </form>
             </div>
-            <aside id="menu">
-                <section>
-                    <button class="comprar" onclick="window.location.href='./usuario.html';">Volver</button>
-                </section>
-                <section>
-                    <nav>
-                        <a href="../materiales/materiales.html">Materiales</a>
-                        <a href="../patrones/patrones.html">Patrones</a>
-                        <a href="../tendencias.html">Tendencias</a>
-                        <a href="../usuario/usuario.html" id="elegida">Usuario</a>
-                        <a href="../cesta/cesta.html">Carrito</a>
-                    </nav>
-                </section>
-            </aside>
         </main>
-        <!-- Popup de Éxito -->
-        <!-- <div id="modalSuccess" class="modal-bg modal-success">
-            <div class="modal-content">
-                <h2>Éxito</h2>
-                <p>Se han modificado los campos correctamente.</p>
-                <button id="cerrarSuccess">Cerrar</button>
-            </div>
-        </div> -->
-        <!-- Popup de Error -->
-        <!-- <div id="modalError" class="modal-bg modal-error">
-            <div class="modal-content">
-                <h2>Error</h2>
-                <p>Ha ocurrido un error. Por favor, inténtalo de nuevo.</p>
-                <button id="cerrarError">Cerrar</button>
-            </div>
-        </div> -->
+        <aside id="menu">
+            <section>
+                <nav>
+                    <a href="../materiales/materiales.html">Materiales</a>
+                    <a href="../patrones/patrones.html">Patrones</a>
+                    <a href="../tendencias.html">Tendencias</a>
+                    <a href="../usuario/usuario.html" id="elegida">Usuario</a>
+                    <a href="../cesta/cesta.html">Carrito</a>
+                </nav>
+            </section>
+        </aside>
+        <script src="../js/index.js"></script>
     </body>
 </html>

@@ -7,12 +7,21 @@ body {
     --color-boton: rgb(126, 137, 150);
     --columnas-grid: 2;
     --columnas-tendencias: 2;
+    /* overflow-y: hidden; */
+}
+
+.hidden {
+    display: none;
 }
 
 /* ============== LOGO ============== */
 
 #logo-mini {
     height: 50px;
+}
+
+main {
+    overflow-y: visible;
 }
 
 /* ============== HEADER ============== */
@@ -549,5 +558,35 @@ video {
     body {
         --columnas-grid: 4;
         --columnas-tendencias: 4;
+        display: grid;
+        grid-template-areas:
+            "vacio header"
+            "aside main";
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 8fr;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+        margin: 2rem;
+        margin-top: 0;
+    }
+
+    #menu {
+        grid-area: aside;
+        position: fixed;
+        top: 15vh;
+        right: 85vw;
+        padding: 5px;
+    }
+    
+    aside nav {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(5, 1fr);
     }
 }
